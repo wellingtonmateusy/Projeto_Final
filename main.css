@@ -13,10 +13,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, footer{
-    padding: 16px;
-    background-color: #314e9e;
-    color: #ecf0f1;
+header{
+    position: absolute;
+    width: 1366px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    background: #055FC9;
+    border-radius: 0px 0px 16px 16px;
 }
 
 header nav li{
@@ -25,26 +29,55 @@ header nav li{
     font-size: 18px;
 }
 
-header nav li a{
-    color: #ecf0f1;
-    text-decoration: none;
+header nav input{
+    width: 500px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background: #ecf0f1;
+    color: #055FC9;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 300px;
 }
 
-
 .container {
-    max-width: 1280px;
+    max-width: 1350px;
     align-items: center;
     margin: 0 auto;
 }
 
 .container img{
-    height: 30px;
+    height: 20px;
+}
+
+.container #logoLoja{
+    margin-left: 40px;
+    width: 166px;
+    height: 49px;
+    left: 628px;
+    top: 3px;
+    background: url(Logo.png);
+}
+
+.container #lupa{
+    width: 16px;
+    height: 16px;
+    left: 800px;
+    top: 3px;
+    background: url(lupa.png);
 }
 
 .banner img{
-    height: 700px;
+    position: absolute;
+    width: 1288px;
+    height: 618px;
+    left: 39px;
+    top: 112px;
+    background: url(1.png);
     border-radius: 16px;
-    margin-left: 250px;
 }
 
 header .container,
@@ -54,73 +87,44 @@ section .container{
     justify-content: space-between;
 }
 
-.brands-list img {
+.brands-list img{
     height: 24px;
 }
-.brands-list li {
+.brands-list li{
     display: inline;
     margin: 8px;
 }
 
-section .container {
+section .container{
     align-items: flex-start;
 }
-section {
+
+section{
     padding: 24px 0;
 }
 
-section h2 {
+section h2{
     margin-bottom: 16px;
 }
 
-section {
-    color: #182c61;
-}
-
-section p{
-    color: black;
-    margin-bottom: 8px;
+section{
+    color: #ffffff;
 }
 
 #contact .container{
     display: block;
 }
 
-.contact-methods {
+.contact-methods{
     display: flex;
     justify-content: space-between;
 }
 
-form input,
-form textarea,
-form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    border: none;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #182c61;
-    color: #ecf0f1;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #314e9e;
-}
-
-input:focus, textarea:focus {
-    outline-color: #182c61;
-}
-
-.social-links img {
+.social-links img{
     height: 24px;
 }
 
-.social-links li {
+.social-links li{
     display: inline;
     margin-right: 8px;
 }
@@ -130,5 +134,59 @@ input:focus, textarea:focus {
 }
 
 footer{
+    position: absolute;
+    width: 1366px;
+    height: 661px;
+    left: 0px;
+    top: 1339px;
+    background: rgba(5, 95, 201, 0.8);
+    border-radius: 16px 16px 0px 0px;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    
+}
+
+form input{
+    display: flex;
+    margin-bottom: 6px;
+    border: none;
+    width: 333px;
+    height: 35px;
+    left: 955px;
+    top: 1611px;
+    background: #EEEEEE;
     border-radius: 16px;
+    text-align: center;
+}
+
+form textarea{
+    width: 333px;
+    height: 90px;
+    left: 955px;
+    top: 1658px;
+    background: #EEEEEE;
+    border-radius: 16px;
+    text-align: center;
+}
+
+form button{
+    border: none;
+    width: 336px;
+    height: 44px;
+    left: 955px;
+    top: 1760px;
+    background: #000000;
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+form button:hover{
+    background-color: #333333;
 }
