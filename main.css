@@ -1,118 +1,79 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-header h1,
-section h2 {
-    font-family: 'Bungee', cursive;
-}
-
-body {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    position: absolute;
-    width: 1366px;
-    height: 54px;
-    left: 0px;
-    top: 0px;
-    background: #055FC9;
-    border-radius: 0px 0px 16px 16px;
+html{
+    overflow-x: hidden;
 }
 
-header nav li{
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
-}
-
-header nav input{
-    width: 500px;
-    height: 32px;
-    border-radius: 16px;
-    border: none;
-    background: #ecf0f1;
-    color: #055FC9;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 8px;
-    margin-left: 16px;
-    margin-right: 300px;
-}
-
-.container {
-    max-width: 1350px;
-    align-items: center;
+.container{
+    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.container img{
-    height: 20px;
+header{
+    background-color: #192a56;
+    padding: 16px;
+    color: #fff;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
 }
 
 .container #logoLoja{
     margin-left: 40px;
-    width: 166px;
-    height: 49px;
-    left: 628px;
-    top: 3px;
-    background: url(Logo.png);
+    width: 20%;
 }
 
-.container #lupa{
-    width: 16px;
-    height: 16px;
-    left: 800px;
-    top: 3px;
-    background: url(lupa.png);
-}
-
-.banner img{
-    position: absolute;
-    width: 1288px;
-    height: 618px;
-    left: 39px;
-    top: 112px;
-    background: url(1.png);
+#carrossel_imagens img{
+    width: 30%;
+    margin: 100px 100px;
     border-radius: 16px;
 }
 
-header .container,
-section .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav{
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
 }
 
-.brands-list img{
-    height: 24px;
-}
-.brands-list li{
+nav li{
+    list-style: none;
     display: inline;
-    margin: 8px;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-section .container{
-    align-items: flex-start;
+nav li a{
+    color: #fff;
+    text-decoration: none;
 }
 
-section{
-    padding: 24px 0;
+.menu_hamburger{
+    width: 32px;
+    cursor: pointer;
 }
 
-section h2{
-    margin-bottom: 16px;
-}
-
-section{
-    color: #ffffff;
-}
-
-#contact .container{
+.menu_hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
     display: block;
+    margin-bottom: 4px;
+}
+
+.container_flex{
+    display: flex;
 }
 
 .contact-methods{
@@ -133,9 +94,94 @@ section{
     text-decoration: none;
 }
 
+#sobre_a_loja img{
+    max-width: 400px;
+}
+
+.texto h2, .texto p{
+    margin: 16px;
+    text-align: justify;
+}
+
+.texto h2{
+    margin-top: 0;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+#linha span{
+    height: 4px;
+    width: 30%;
+    background-color: #000000;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 16px;
+}
+
+.categorias{
+    flex-wrap: wrap;
+}
+
+.categorias th img{
+    max-width: 100%;
+}
+
+
+.lista_produtos{
+    flex-wrap: wrap;
+}
+
+.lista_produtos li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista_produtos li img{
+    max-width: 100%;
+}
+
+.lista_produtos li h3{
+    margin: 16px 0;
+}
+
+.item_central{
+    margin: 0 5%;
+}
+
+.lista_produtos li button{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-family: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+strong, .preco{
+    margin: 16px 0;
+    display: block;
+}
+
+.preco del{
+    color: #ccc;
+    font-size: 14px;
+}
+
 footer{
-    position: absolute;
-    width: 1366px;
+    position: relative;
+    width: 100%;
     height: 661px;
     left: 0px;
     top: 1339px;

@@ -5,70 +5,224 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="./main.css"/>
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        
         <title>Loja On Net</title>
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="container container_flex">
                 <img id="logoLoja" src="./icones/Logo.png" alt="Logo da Loja"/>
-                <img id="menu" type="submit" src="./icones/menu-hamburguer.png" alt="Ícone de menu-hamburguer">
-                <nav>
-                    <ul>
-                        <li>
-                            <input type="search" placeholder="Pesquise"/>
-                            <img id="lupa" src="./icones/procurar.png" alt="Ícone Lupa">
-                        </li>
-                        <li>
-                            <img src="./icones/carrinho.png" alt="Ícone Carrinho"/>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section id="about">
-            <div class="banner">
-                <img src="./midias/1.png" alt="Banner 1"/>
-                <!-- <img src="./midias/2.png" alt="Banner 2"/>
-                <img src="./midias/3.png" alt="Banner 3"/> -->
-            </div>
-    </body>
-    <footer>
-        <section id="contact">
-            <div class="container">
-                <div class="contact-methods">
-                    <div>
-                        <h3>Nos acompanhe</h3>
-                        <ul class="social-links">
-                            <li>
-                                <a href="#" title="Siga-nos no Instagram">
-                                    <img src="./icones/instagram.png" alt="Logo do Instagram" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Siga-nos no Facebook">
-                                    <img src="./icones/facebook.png" alt="Logo do Facebook" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Visite nosso canal no Youtube">
-                                    <img src="./icones/youtube.png" alt="Logo do Youtube" /> 
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Fale conosco</h3>
-                        <form>
-                            <input id="seunome" type="text" placeholder="Seu nome" required/>
-                            <input id="seuemail" type="email" placeholder="Seu e-mail" required/>
-                            <input id="telefone" type="number" placeholder="Seu telefone" required/>
-                            <textarea placeholder="Sua mensagem" required></textarea>
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </div>
+                <div class="menu_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Em destaque</a>
+                        </li>
+                        <li>
+                            <a href="#">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <div id="carrossel_imagens">
+            <img src="./midias/1.png" alt="Banner 1"/>
+            <img src="./midias/2.png" alt="Banner 2"/>
+            <img src="./midias/3.png" alt="Banner 3"/>
+        </div>
+        <section id="destaque">
+            <div class="container">
+                <h2>Categorias</h2>
+                <div id="linha">
+                    <span></span>
+                </div>
+                <table class="container_flex categorias">
+                    <th>
+                        <img src="./categorias/casa.png" alt="Carro mercedes_amg_gtr"/>
+                        <h3>Casa e Cozinha</h3>
+                    </th>
+                    <th class="item_central">
+                        <img src="./images/porsche-taycan-4s-eletrico.png" alt="Carro porsche-taycan-4s-eletrico"/>
+                        <h3>Eletrônicos</h3>
+                    </th>
+                    <th>
+                        <img src="./images/porsche-macan-2.0-turbo-gasothna-pdk.png" alt="Carro porsche-macan-2.0"/>
+                        <h3>Vestuário</h3>
+                    </th>
+                    <th>
+                        <img src="./images/tesla-model-3-eletrico.png" alt="Carro tesla-model-3-eletrico"/>
+                        <h3>Brinquedos</h3>
+                    </th>
+                    <th class="item_central">
+                        <img src="./categorias/pets.png" alt="Carro bmw-m8"/>
+                        <h3>Pets</h3>
+                    </th>
+                    <th>
+                        <img src="./images/tesla-model-3-eletrico.png" alt="Carro tesla-model-3-eletrico"/>
+                        <h3>Fitnes</h3>
+                    </th>
+                </table>
+            </div>
         </section>
-    </footer>
+
+        <section id="promocao">
+            <div class="container">
+                <h2>Mais vendidos da Semana</h2>
+                <div id="linha">
+                    <span></span>
+                </div>
+                <ul class="container_flex lista_produtos">
+                    <li>
+                        <h3>LAMBORGHINI URUS
+                            4.0 V8 TURBO GASOLINA LP650-4 AUTOMÁTICO 2019/2019 </h3>
+                        <img src="./images/lamborghini-urus.png" alt="Carro lamborghini-urus"/>
+                        <p>
+                            Cambio automático de 8 marchas, tração integral, seletor Anima com modos Strada, 
+                            Sport, Corsa e Neve, modo personalizado EGO, interior em couro preto e vermelho com costuras vermelhas, 
+                            iluminação ambiente e acabamento em Black Piano e alumínio escovado, volante multifuncional em couro e Alcantara com costuras vermelhas, 
+                            painel de instrumentos em TFT configurável, ar condicionado digital Quad Zone, porta malas elétrico, blindado CART com vidros AGP iB33 
+                            (inclusive teto solar panorâmico). Outros Opcionais: Farol de neblina, Comando de áudio no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, 
+                            Kit Multimídia, Pára-choques na cor do veículo.
+                        </p>
+                        <div class="preco">
+                            <del>R$ 4.200.000,00</del>
+                            <strong>R$ 3.100.000,00</strong>
+                            <button type="button">Ver produto</button>
+                        </div>
+                    </li>
+                    <li class="item_central">
+                        <h3>LAMBORGHINI AVENTADOR
+                            6.5 V12 GASOLINA LP 770-4 SVJ ROADSTER ISR 2021/2021</h3>
+                        <img src="./images/lamborghini-aventador.png" alt="Carro lamborghini-aventador"/>
+                        <p>
+                            Cor Ad Personam Blu Emera, Motor V12 aspirado com 770cv, Interior Nero Ancantara com costuras em Azul, 
+                            Pacote interno em carbono, Bancos Comfort em carbono com ajuste elétrico, Lamborghini Shields bordado nos encostos de cabeça dos bancos, 
+                            Lift System, Escapamento Innotech IPE Full em titânio, Capota em carbono facilmente removível manualmente, Aerofólio ALA (Aerodinâmica Lamborghini Ativa) em carbono,
+                            Volante em Alcantara, Paddle Shift em carbono, Portas com abertura para cima, Sistema de som Surround da Sensonum, Rodas Leirion forjadas na cor Cinza Fosco,
+                            Freios em Ceramic-carbon com pinças de freio na cor amarela.
+                        </p>
+                        <div class="preco">
+                            <del>R$ 10.900.000,00</del>
+                            <strong>R$ 7.457.104,00</strong>
+                            <button type="button">Ver produto</button>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>BMW Z4
+                            2.0 16V TURBO GASOLINA SDRIVE20I AUTOMÁTICO 2015/2016</h3>
+                        <img src="./images/carro-bmw.png" alt="Carro BMW Z4"/>
+                        <p>
+                            IMPECÁVEL 2 DONO , SEM DETALHES, BAIXO KM
+                            Nos reservamos o direito a erros de digitação.
+                            Financiamos com as melhores Taxas.
+                            Parcelamos no cartões Visa e Mastercard.
+                        </p>
+                        <div class="preco">
+                            <del>R$ 300.000,00</del>
+                            <strong>R$ 265.900,00</strong>
+                            <button type="button">Ver produto</button>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>VOLKSWAGEN FUSCA 1300L 1975</h3>
+                        <img src="./images/fusca.png" alt="Carro fusca 1975"/>
+                        <p>
+                            MOTOR 1300 NOVO
+                            MECÂNICA REVISADA
+                            INTERNA MONOCROMÁTICA MARROM
+                            APARELHO DE SOM PIONEER USB
+                            PNEUS BONS
+                            ACEITO TROCAS - Mais opcionais:Som USB
+                        </p>
+                        <div class="preco">
+                            <del>R$ 30.000,00</del>
+                            <strong>R$ 25.500,00</strong>
+                            <button type="button">Ver produto</button>
+                        </div>
+                    </li>
+                    <li class="item_central">
+                        <h3>Bmw K 1300 S 2010</h3>
+                        <img src="./images/moto-bmw.png" alt="Moto Bmw K 1300 s 2010"/>
+                        <p>
+                            Ficha tecnica - Motor de 1300 cilindradas - 4 cilindros em linha, - 175 cv - 14.2 
+                            kgfm de torque - Cambio manual de 6 velocidades - Freios a disco - 
+                            Injecao eletronica - Eixo Carda - Quadro em Aluminio - Peso 228 kg - 
+                            Tanque de 19 litros
+                        </p>
+                        <div class="preco">
+                            <del>R$ 80.000,00</del>
+                            <strong>R$ 55.900,00</strong>
+                            <button type="button">Ver produto</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <section id="contact">
+                <div class="container">
+                    <div class="contact-methods">
+                        <div>
+                            <h3>Nos acompanhe</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#" title="Siga-nos no Instagram">
+                                        <img src="./icones/instagram.png" alt="Logo do Instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Siga-nos no Facebook">
+                                        <img src="./icones/facebook.png" alt="Logo do Facebook" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Visite nosso canal no Youtube">
+                                        <img src="./icones/youtube.png" alt="Logo do Youtube" /> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Fale conosco:</h3>
+                            <form>
+                                <input id="seunome" type="text" placeholder="Seu nome" required/>
+                                <input id="seuemail" type="email" placeholder="Seu e-mail" required/>
+                                <input id="telefone" type="number" placeholder="Seu telefone" required/>
+                                <textarea placeholder="Sua mensagem" required></textarea>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
 </html>
