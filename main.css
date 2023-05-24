@@ -96,6 +96,21 @@ section h2{
     margin-bottom: 16px;
 }
 
+.cabecalho_categorias{
+    display: flex;
+}
+
+.cabecalho_categorias a{
+    margin-top: 10px;
+    margin-left: 75%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.cabecalho_categorias a:hover{
+    color: #00C2CB;
+}
+
 #linha span{
     height: 4px;
     width: 30%;
