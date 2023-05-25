@@ -147,7 +147,7 @@ section h2{
     cursor: pointer;
 }
 
-.categorias td h3:hover{
+.categorias td a:hover{
     color: #00C2CB;
     cursor: pointer;
 }
@@ -190,7 +190,7 @@ section h2{
     margin-top: 8px;
 }
 
-.lista_produtos li button:hover{
+.lista_produtos li:hover button{
     background-color: #192a56;
 }
 
