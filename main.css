@@ -28,6 +28,24 @@ header > .container{
     padding-bottom: 16px;
 }
 
+header .lupa img{
+    margin: 5px 5px;
+    width: 20px;
+}
+
+header .lupa button{
+    background-color: #00C2CB;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+header .lupa input{
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
 .container #logoLoja{
     margin-left: 40px;
     width: 20%;
@@ -210,7 +228,6 @@ strong, .preco{
 }
 
 footer{
-    position: relative;
     width: 100%;
     height: 661px;
     left: 0px;
