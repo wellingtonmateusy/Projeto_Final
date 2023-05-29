@@ -18,20 +18,25 @@
     </head>
     <body>
         <header>
-            <div class="container container_flex">
-                <img id="logoLoja" src="./icones/Logo.png" alt="Logo da Loja"/>
-                <div class="container_flex lupa">
-                    <input type="search" name="pesquisa" id="pesquisa">
-                    <button type="submit" class="botão_lupa">
-                        <img src="./icones/procurar.png" alt="ícone de procurar">
-                    </button>
-                </div>
+            <form class="form_cabecalho">
                 <div class="menu_hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-            </div>
+                <div class="logoLoja">
+                    <img src="./icones/Logo.png" alt="Logo da Loja"/>
+                </div>
+                <div class="form_cabecalho lupa">
+                    <input type="search" name="pesquisa" id="pesquisa">
+                    <button type="submit">
+                        <img src="./icones/procurar.png" alt="lupa"/>
+                    </button>
+                </div>
+                <div class="carrinho">
+                    <img src="./icones/carrinho.png" alt="ícone de carrinho"/>
+                </div>
+            </form>
             <nav>
                 <div class="container">
                     <ul>
@@ -166,17 +171,32 @@
                             <h3>Nos acompanhe</h3>
                             <ul class="social-links">
                                 <li>
-                                    <a href="#" title="Siga-nos no Instagram">
+                                    <a href="https://www.instagram.com/loja_onnet/" title="Siga-nos no Instagram">
                                         <img src="./icones/instagram.png" alt="Logo do Instagram" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Siga-nos no Facebook">
+                                    <a href="https://www.facebook.com/lojaonnet/" title="Siga-nos no Facebook">
                                         <img src="./icones/facebook.png" alt="Logo do Facebook" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Visite nosso canal no Youtube">
+                                    <a href="https://youtube.com/@loja_onnet" title="Visite nosso canal no Youtube">
+                                        <img src="./icones/youtube.png" alt="Logo do Youtube" /> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://tiktok/@loja_onnet" title="Visite nosso canal no Youtube">
+                                        <img src="./icones/Tiktok.png" alt="Logo do Youtube" /> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://pinterest/@loja_onnet" title="Visite nosso canal no Youtube">
+                                        <img src="./icones/Pinterest.png" alt="Logo do Youtube" /> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://youtube.com/@loja_onnet" title="Visite nosso canal no Youtube">
                                         <img src="./icones/youtube.png" alt="Logo do Youtube" /> 
                                     </a>
                                 </li>
@@ -187,7 +207,7 @@
                             <form>
                                 <input id="seunome" type="text" placeholder="Seu nome" required/>
                                 <input id="seuemail" type="email" placeholder="Seu e-mail" required/>
-                                <input id="telefone" type="number" placeholder="Seu telefone" required/>
+                                <input id="telefone" type="tel" placeholder="Seu telefone" required/>
                                 <textarea placeholder="Sua mensagem" required></textarea>
                                 <button type="submit">Enviar</button>
                             </form>

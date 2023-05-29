@@ -28,31 +28,42 @@ header > .container{
     padding-bottom: 16px;
 }
 
+header .form_cabecalho{
+    display: flex;
+}
+
 header .lupa img{
-    margin: 5px 5px;
     width: 20px;
 }
 
 header .lupa button{
     background-color: #00C2CB;
     border: none;
-    width: 100%;
+    width: 7%;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
 
 header .lupa input{
+    width: 500px;
     border: none;
     border-radius: 5px 0 0 5px;
 }
 
-.container #logoLoja{
+form .carrinho img{
+    margin: 10px 100px;
+    width: 30px;
+}
+
+header form .logoLoja img{
+    margin: 10px 40px 0 0;
     margin-left: 40px;
-    width: 20%;
+    width: 120px;
 }
 
 #carrossel_imagens img{
     width: 100%;
+    height: 580px;
 }
 
 nav{
@@ -76,7 +87,8 @@ nav li a{
 }
 
 .menu_hamburger{
-    width: 32px;
+    margin-top: 20px;
+    width: 1.5%;
     cursor: pointer;
 }
 
@@ -86,6 +98,7 @@ nav li a{
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+    border-radius: 16px;
 }
 
 .container_flex{
@@ -236,15 +249,16 @@ footer{
     border-radius: 16px 16px 0px 0px;
 }
 
-form input,
-form textarea,
-form button {
+footer form input,
+footer form textarea,
+footer form button {
+    resize: none;
     display: block;
     width: 320px;
     margin-bottom: 8px;
 }
 
-form input{
+footer form input{
     display: flex;
     margin-bottom: 6px;
     border: none;
@@ -257,7 +271,7 @@ form input{
     text-align: center;
 }
 
-form textarea{
+footer form textarea{
     width: 333px;
     height: 90px;
     left: 955px;
@@ -265,9 +279,10 @@ form textarea{
     background: #EEEEEE;
     border-radius: 16px;
     text-align: center;
+    border: none;
 }
 
-form button{
+footer form button{
     border: none;
     width: 336px;
     height: 44px;
@@ -279,8 +294,9 @@ form button{
     text-align: center;
 }
 
-form button:hover{
+footer form button:hover{
     background-color: #333333;
+    cursor: pointer;
 }
 
 .social-links img{
