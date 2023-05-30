@@ -67,21 +67,24 @@ header form .logoLoja img{
 }
 
 nav{
-    background-color: #575fcf;
-    padding: 16px 0;
     display: none;
+    position: absolute;
+    margin: 10px 0px;
+    z-index: 1;
+    width: 50%;
+    height: 80%;
+    background-color: #00C2CB;
 }
 
 nav li{
     list-style: none;
-    display: inline;
-    margin-right: 16px;
     font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
 nav li a{
+    margin: 16px;
+    display: block;
     color: #fff;
     text-decoration: none;
 }
@@ -183,8 +186,9 @@ section h2{
     cursor: pointer;
 }
 
-#efeito{position:relative;padding:4px;background-color:#fff}
-#efeito:hover{top:-2px;box-shadow:0 2px 2px #666;border-radius: 16px}
+#efeito:hover{
+    transform: scale(1.1);
+}
 
 .lista_produtos{
     flex-wrap: wrap;
@@ -242,72 +246,75 @@ strong, .preco{
 
 footer{
     width: 100%;
-    height: 661px;
-    left: 0px;
-    top: 1339px;
-    background: rgba(5, 95, 201, 0.8);
+    height: 400px;
+    background: #192a56;
     border-radius: 16px 16px 0px 0px;
 }
 
-footer form input,
-footer form textarea,
-footer form button {
-    resize: none;
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-}
-
-footer form input{
+.menus ul{
     display: flex;
-    margin-bottom: 6px;
-    border: none;
-    width: 333px;
-    height: 35px;
-    left: 955px;
-    top: 1611px;
-    background: #EEEEEE;
-    border-radius: 16px;
-    text-align: center;
 }
 
-footer form textarea{
-    width: 333px;
-    height: 90px;
-    left: 955px;
-    top: 1658px;
-    background: #EEEEEE;
-    border-radius: 16px;
-    text-align: center;
-    border: none;
+.menus li h4,
+.forma_pagamentos li h4,
+.redes_sociais li h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #00C2CB;
 }
 
-footer form button{
-    border: none;
-    width: 336px;
-    height: 44px;
-    left: 955px;
-    top: 1760px;
-    background: #000000;
-    border-radius: 16px;
-    color: #fff;
-    text-align: center;
-}
-
-footer form button:hover{
-    background-color: #333333;
-    cursor: pointer;
-}
-
-.social-links img{
-    height: 30px;
-}
-
-.social-links li{
+.menus li{
     display: inline;
+}
+
+.menus .item_central_footer{
+    margin-left: 62px;
+    margin-right: 62px;
+}
+
+.menus li a,
+.menus li p{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
     margin-right: 8px;
 }
 
-.social-links li a{
-    text-decoration: none;
+.menus a:hover{
+    color: #00C2CB;
+}
+
+.menus img{
+    height: 50px;
+}
+
+.forma_pagamentos{
+    margin-top: 17%;
+    position: absolute;
+    display: flex;
+}
+
+.forma_pagamentos li,
+.redes_sociais li{
+    list-style: none;
+}
+
+.forma_pagamentos img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.redes_sociais{
+    margin-top: 17%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.redes_sociais img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.redes_sociais img:hover{
+    transform: scale(1.2);
 }
