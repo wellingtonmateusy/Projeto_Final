@@ -54,14 +54,13 @@ header .lupa button{
     width: 7%;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
-    margin-right: 180px;
+    margin-right: 450px;
 }
 
 header .lupa input{
     width: 500px;
     border: none;
     border-radius: 5px 0 0 5px;
-    margin-left: 200px;
 }
 
 header .lupa input::placeholder{
@@ -90,6 +89,7 @@ header form .logoLoja img{
     margin: 10px 40px 0 0;
     margin-left: 40px;
     width: 125px;
+    margin-right: 500px;
 }
 
 #carrossel_imagens img{
@@ -359,6 +359,6 @@ footer{
 
 footer .copyright p{
     color: #fff;
-    margin-left: 160px;
-    margin-top: 160px;
+    margin-left: 23%;
+    margin-top: 10%;
 }
