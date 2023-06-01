@@ -54,17 +54,36 @@ header .lupa button{
     width: 7%;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
+    margin-right: 180px;
 }
 
 header .lupa input{
     width: 500px;
     border: none;
     border-radius: 5px 0 0 5px;
+    margin-left: 200px;
 }
 
-form .carrinho img{
-    margin: 10px 100px;
+header .lupa input::placeholder{
+    padding: 10px;
+}
+
+.icones_cabecalho ul{
+    display: flex;
+    list-style: none;
+}
+
+.icones_cabecalho li{
+    cursor: pointer;
+}
+
+form .sacola img{
+    margin-left: 30px;
     width: 30px;
+}
+
+form .caminhao img{
+    width:40px;
 }
 
 header form .logoLoja img{
@@ -83,9 +102,9 @@ nav{
     position: absolute;
     margin: 10px 0px;
     z-index: 1;
-    width: 50%;
-    height: 80%;
-    background-color: #00C2CB;
+    width: 30%;
+    height: 50%;
+    background-color: #192a56;
 }
 
 nav li{
@@ -99,6 +118,10 @@ nav li a{
     display: block;
     color: #fff;
     text-decoration: none;
+}
+
+nav li a:hover{
+    color: #00C2CB;
 }
 
 .menu_hamburger{
@@ -322,6 +345,9 @@ footer{
     margin-left: 30%;
 }
 
+.redes_sociais li a{
+    text-decoration: none;
+}
 .redes_sociais img{
     width: 30px;
     margin-right: 5px;
@@ -329,4 +355,10 @@ footer{
 
 .redes_sociais img:hover{
     transform: scale(1.2);
+}
+
+footer .copyright p{
+    color: #fff;
+    margin-left: 160px;
+    margin-top: 160px;
 }
