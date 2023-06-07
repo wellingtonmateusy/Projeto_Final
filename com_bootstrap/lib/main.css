@@ -1,0 +1,129 @@
+
+header{
+    background-color: #192a56;
+    padding: 16px;
+    color: #fff;
+}
+
+.logoLoja{
+    margin-left: 40px;
+    width: 150px;
+    margin-right: 500px;
+}
+
+nav ul .nav-item i{
+    color: #fff;
+}
+
+.carousel-item img{
+    margin-top: 5%;
+    height: 500px;
+}
+
+img{
+    width: 100%;
+}
+
+.row .categorias a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.row .categorias  img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.row .categorias a:hover{
+    color: #00C2CB;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background: #192a56;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.menus ul{
+    display: flex;
+}
+
+.menus li h4,
+.forma_pagamentos li h4,
+.redes_sociais li h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #00C2CB;
+}
+
+.menus li{
+    display: inline;
+}
+
+.menus .item_central_footer{
+    margin-left: 62px;
+    margin-right: 62px;
+}
+
+.menus li a,
+.menus li p{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.menus a:hover{
+    color: #00C2CB;
+}
+
+.menus img{
+    height: 50px;
+}
+
+.forma_pagamentos{
+    margin-top: 17%;
+    position: absolute;
+    display: flex;
+}
+
+.forma_pagamentos li,
+.redes_sociais li{
+    list-style: none;
+}
+
+.forma_pagamentos img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.redes_sociais{
+    margin-top: 17%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.redes_sociais li a{
+    text-decoration: none;
+}
+.redes_sociais img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.redes_sociais img:hover{
+    transform: scale(1.2);
+}
+
+footer .copyright p{
+    color: #fff;
+    margin-left: 23%;
+    margin-top: 10%;
+}
