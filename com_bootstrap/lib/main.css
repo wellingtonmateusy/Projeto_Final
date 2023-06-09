@@ -43,10 +43,6 @@ nav ul .nav-item a{
     border-radius: 16px;
 }
 
-#efeito1:hover{
-    transform-box: 1;
-}
-
 #efeito:hover{
     transform: scale(1.1);
 }
