@@ -1,4 +1,3 @@
-
 header{
     background-color: #192a56;
     padding: 16px;
@@ -11,17 +10,45 @@ header{
     margin-right: 500px;
 }
 
-nav ul .nav-item i{
+nav ul .nav-item a{
     color: #fff;
 }
 
 .carousel-item img{
     margin-top: 5%;
     height: 500px;
+    width: 100%;
 }
 
-img{
-    width: 100%;
+.cabecalho_categorias{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cabecalho_categorias h2{
+    margin-bottom: 10px;
+}
+
+.cabecalho_categorias a{
+    margin-left: 75%;
+}
+
+#linha span{
+    height: 4px;
+    width: 30%;
+    background-color: #00C2CB;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 16px;
+}
+
+#efeito1:hover{
+    transform-box: 1;
+}
+
+#efeito:hover{
+    transform: scale(1.1);
 }
 
 .row .categorias a{
@@ -32,98 +59,40 @@ img{
     font-weight: bold;
 }
 
-.row .categorias  img{
+.row .categorias img{
+    margin-top: 10px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 16px;
     cursor: pointer;
 }
 
-.row .categorias a:hover{
+.row .categorias a:hover,
+.cabecalho_categorias a:hover{
     color: #00C2CB;
     cursor: pointer;
 }
 
-footer{
+.card-body{
+    text-align: center;
+}
+
+.card-body .verde{
+    font-size: 18px;
+    color: green;
+}
+
+.card-body strong,
+.card-body del{
+    color: #575757;
+}
+
+.card-body .btn{
+    background-color: #00C2CB;
+    border: none;
     width: 100%;
-    height: 500px;
-    background: #192a56;
-    border-radius: 16px 16px 0px 0px;
 }
 
-.menus ul{
-    display: flex;
-}
-
-.menus li h4,
-.forma_pagamentos li h4,
-.redes_sociais li h4{
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #00C2CB;
-}
-
-.menus li{
-    display: inline;
-}
-
-.menus .item_central_footer{
-    margin-left: 62px;
-    margin-right: 62px;
-}
-
-.menus li a,
-.menus li p{
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 8px;
-}
-
-.menus a:hover{
-    color: #00C2CB;
-}
-
-.menus img{
-    height: 50px;
-}
-
-.forma_pagamentos{
-    margin-top: 17%;
-    position: absolute;
-    display: flex;
-}
-
-.forma_pagamentos li,
-.redes_sociais li{
-    list-style: none;
-}
-
-.forma_pagamentos img{
-    width: 50px;
-    margin-right: 5px;
-}
-
-.redes_sociais{
-    margin-top: 17%;
-    position: absolute;
-    margin-left: 30%;
-}
-
-.redes_sociais li a{
-    text-decoration: none;
-}
-.redes_sociais img{
-    width: 30px;
-    margin-right: 5px;
-}
-
-.redes_sociais img:hover{
-    transform: scale(1.2);
-}
-
-footer .copyright p{
-    color: #fff;
-    margin-left: 23%;
-    margin-top: 10%;
+.card-body .btn:hover{
+    background-color: #192a56;
 }
