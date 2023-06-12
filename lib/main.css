@@ -42,6 +42,18 @@ header{
     transform: scale(1.1);
 }
 
+.carousel-cell {
+    width: 15%;
+    height: 250px;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+}
+
+.flickity-button:hover{
+    background-color: #192a56;
+    color: #fff;
+}
+
 .row .categorias a{
     text-align: center;
     text-decoration: none;
@@ -51,10 +63,7 @@ header{
 }
 
 .row .categorias img{
-    margin-top: 10px;
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 16px;
     cursor: pointer;
 }
 

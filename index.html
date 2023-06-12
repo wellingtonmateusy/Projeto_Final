@@ -8,6 +8,7 @@
         <title>Loja On Net</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <link rel="stylesheet" href="./lib/flickty.min.css">
         <link rel="stylesheet" href="./lib/main.css">
     </head>
     <body>
@@ -49,7 +50,7 @@
                 </form>
             </div>
         </header>
-        <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel slide" id="carousel-ex" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="2000" class="carousel-item active">
                     <img src="./lib/midias/banners/carrosel/1.png">
@@ -78,59 +79,61 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/casa e cozinha/casaecozinha.html">
-                            <img src="./lib/categorias/casa e cozinha/midias/capa/Casa e Cozinha.png" alt="Imagem de uma Cozinha" id="efeito1"/>
-                            <h3>Casa e Cozinha</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/eletronicos/eletronicos.html">
-                            <img src="./lib/categorias/eletronicos/midias/capa/Eletronicos.png" alt=""/>
-                            <h3>Eletrônicos</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/vestuario/vestuario.html">
-                            <img src="./lib/categorias/vestuario/midias/capa/Vestuario e Moda.png" alt=""/>
-                            <h3>Vestuário</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/brinquedos/brinquedos.html">
-                            <img src="./lib/categorias/brinquedos/midias/capa/Brinquedos.png" alt=""/>
-                            <h3>Brinquedos</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/pets/pets.html">
-                            <img src="./lib/categorias/pets/midias/capa/Pets.png"/>
-                            <h3>Pets</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/fitnes/fitnes.html">
-                            <img src="./lib/categorias/fitnes/midias/capa/Fitness.png" alt=""/>
-                            <h3>Fitnes</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/saude e beleza/saudebeleza.html">
-                            <img src="./lib/categorias/saude e beleza/midias/capa/Beleza e Saude.png" alt=""/>
-                            <h3>Saúde e Beleza</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/acessorios/acessorios.html">
-                            <img src="./lib/categorias/acessorios/midias/capa/Acessorios.png" alt=""/>
-                            <h3>Acessórios</h3>
-                        </a>
-                    </div>
-                    <div class="col-2 categorias">
-                        <a href="./lib/categorias/bebe e mamae/bebemamae.html">
-                            <img src="./lib/categorias/bebe e mamae/midias/capa/Mamae e Bebe.png" alt=""/>
-                            <h3>Bebê e Mamãe</h3>
-                        </a>
+                    <div class="carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/casa e cozinha/casaecozinha.html">
+                                <img src="./lib/categorias/casa e cozinha/midias/capa/Casa e Cozinha.png" alt="Imagem de uma Cozinha" id="efeito1"/>
+                                <h3>Casa e Cozinha</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/eletronicos/eletronicos.html">
+                                <img src="./lib/categorias/eletronicos/midias/capa/Eletronicos.png" alt=""/>
+                                <h3>Eletrônicos</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/vestuario/vestuario.html">
+                                <img src="./lib/categorias/vestuario/midias/capa/Vestuario e Moda.png" alt=""/>
+                                <h3>Vestuário</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/brinquedos/brinquedos.html">
+                                <img src="./lib/categorias/brinquedos/midias/capa/Brinquedos.png" alt=""/>
+                                <h3>Brinquedos</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/pets/pets.html">
+                                <img src="./lib/categorias/pets/midias/capa/Pets.png"/>
+                                <h3>Pets</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/fitnes/fitnes.html">
+                                <img src="./lib/categorias/fitnes/midias/capa/Fitness.png" alt=""/>
+                                <h3>Fitnes</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/saude e beleza/saudebeleza.html">
+                                <img src="./lib/categorias/saude e beleza/midias/capa/Beleza e Saude.png" alt=""/>
+                                <h3>Saúde e Beleza</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/acessorios/acessorios.html">
+                                <img src="./lib/categorias/acessorios/midias/capa/Acessorios.png" alt=""/>
+                                <h3>Acessórios</h3>
+                            </a>
+                        </div>
+                        <div class="carousel-cell categorias">
+                            <a href="./lib/categorias/bebe e mamae/bebemamae.html">
+                                <img src="./lib/categorias/bebe e mamae/midias/capa/Mamae e Bebe.png" alt=""/>
+                                <h3>Bebê e Mamãe</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -309,5 +312,6 @@
             </div>
         </footer>
         <script src="./lib/bootstrap.bundle.min.js"></script>
+        <script src="./lib/flickty.pkgd.min.js"></script>
     </body>
 </html>
