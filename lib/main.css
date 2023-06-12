@@ -1,0 +1,148 @@
+header{
+    background-color: #192a56;
+    padding: 16px;
+    color: #fff;
+}
+
+#cabecalho img{
+    width: 150px;
+}
+
+#cabecalho a{
+    color: #fff;
+}
+
+#cabecalho a:hover{
+    text-decoration-line: underline;
+}
+
+.carousel-item img{
+    height: 400px;
+    width: 100%;
+}
+
+#cabecalho_categorias{
+    margin-top: 50px;
+}
+
+#cabecalho_categorias h2{
+    margin-bottom: 10px;
+}
+
+#linha span{
+    height: 4px;
+    width: 30%;
+    background-color: #00C2CB;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 16px;
+}
+
+#efeito:hover{
+    transform: scale(1.1);
+}
+
+.row .categorias a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.row .categorias img{
+    margin-top: 10px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.row .categorias a:hover,
+.cabecalho_categorias a:hover{
+    color: #00C2CB;
+    cursor: pointer;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body .verde{
+    font-size: 18px;
+    color: green;
+}
+
+.card-body strong,
+.card-body del{
+    color: #575757;
+}
+
+.card-body .btn{
+    background-color: #00C2CB;
+    border: none;
+    width: 100%;
+}
+
+.card-body .btn:hover{
+    background-color: #192a56;
+}
+
+.complementares{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.complementares svg{
+    margin-bottom: 5px;
+    width: 40px;
+    height: 40px;
+    color: #00C2CB;
+}
+
+.banner-body img{
+    height: 300px;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #192a56;
+    width: 100%;
+    border-radius: 5px 0 5px 0;
+}
+
+footer h5{
+    color: #00C2CB;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+footer h6{
+    color: #fff;
+}
+
+footer a h6:hover{
+    color: #00C2CB;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer #compra-segura img{
+    width: 100%;
+}
+
+footer #formas-pagamentos h5,
+footer #redes-sociais h5{
+    margin-top: 40px;
+}
+
+footer #formas-pagamentos img{
+    width: 50px;
+}
+
+footer #redes-sociais img{
+    width: 30px;
+}
