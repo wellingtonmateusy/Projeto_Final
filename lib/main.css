@@ -42,16 +42,19 @@ header{
     transform: scale(1.1);
 }
 
-.carousel-cell {
+.carousel-cell{
     width: 15%;
     height: 250px;
-    margin-right: 10px;
     counter-increment: carousel-cell;
 }
 
 .flickity-button:hover{
     background-color: #192a56;
     color: #fff;
+}
+
+.flickity-page-dots{
+    display: none;
 }
 
 .row .categorias a{
@@ -109,6 +112,10 @@ header{
     color: #00C2CB;
 }
 
+.mobile{
+    display: none;
+}
+
 .banner-body img{
     height: 300px;
 }
@@ -154,4 +161,51 @@ footer #formas-pagamentos img{
 
 footer #redes-sociais img{
     width: 30px;
+}
+
+@media (max-width: 640px){
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .container{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .carousel-cell{
+        width: 40%;
+    }
+
+    .row .categorias img{
+        width: 100%;
+    }
+
+    .flickity-button{
+        display: none;
+    }
+
+    .mobile .carousel-cell{
+        width: 100%;
+    }
+
+    .mobile .flickity-page-dots{
+        display: block;
+        width: 100%;
+    }
+
+    .mobile .carousel-cell .itens-complementares{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+
 }
