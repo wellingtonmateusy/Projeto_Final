@@ -176,6 +176,7 @@ footer #redes-sociais img{
     .container{
         width: 100%;
         padding: 5px;
+        margin-bottom: 0;
     }
 
     .carousel-cell{
@@ -190,22 +191,38 @@ footer #redes-sociais img{
         display: none;
     }
 
-    .mobile .carousel-cell{
+    .mobile .card-body{
+        text-align: center;
+    }
+
+    .mobile .card-body .verde{
+        font-size: 15px;
+    }
+
+    .mobile .card-body strong,
+    .mobile .card-body del{
+        font-size: 13px;
+    }
+
+    .mobile .carousel{
         width: 100%;
     }
 
-    .mobile .flickity-page-dots{
-        display: block;
-        width: 100%;
-    }
-
-    .mobile .carousel-cell .itens-complementares{
+    .mobile .carousel .itens-complementares{
         width: 100%;
         margin-bottom: 0;
     }
 
-    footer{
-        margin-top: 10px;
+    .mobile .carousel-indicators{
+        position: inherit;
+        display: block;
+        margin-top: 30px;
     }
 
+    .mobile .carousel-indicators button{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+        background-color: #242424;
+    }
 }
