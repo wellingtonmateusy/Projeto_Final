@@ -12,12 +12,15 @@
     <body>
         <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
             <div class="container">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="d-md-none btn btn-success" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" id="config_button">
+                    <span class="bi bi-list"></span>
                 </button>
                 <a href="/index.html">
                     <img src="/lib/midias/logos/Logo.png" alt="Logo da Loja">
                 </a>
+                <button class="d-md-none btn btn-success d-block" data-bs-toggle="collapse" data-bs-target="#procurar" id="config_button">
+                    <span class="bi bi-search"></span>
+                </button>
                 <nav class="navbar-collapse collapse justify-content-lg-center" id="menu-navegacao">
                     <ul class="nav nav-pills d-block d-md-flex">
                         <li class="nav-item fw-bold">
@@ -36,16 +39,22 @@
                             </a>
                         </li>
                         <li class="nav-item fw-bold">
-                            <a href="#" class="nav-link">
+                            <a href="https://rastreamento.correios.com.br/app/index.php" class="nav-link">
                                 Rastrear Pedido
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <form class="form-inline d-lg-flex my-2 my-lg-0 collapse" id="procurar">
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
                 </form>
+                <a href="/lib/carrinho.html">
+                    <button class="btn btn-success" id="config_button">
+                        <i class="bi bi-cart2"></i>
+                        <i class="bi bi-0-square-fill" style="color: #00C2CB;"></i>
+                    </button>
+                </a>
             </div>
         </header>
         <div class="container">
@@ -73,70 +82,204 @@
                 </div>
             </main>
         </div>
-        <div class="container">
-            <div class="row complementares">
-                <div class="col-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-                    </svg>
-                    <h5>Frete Grátis</h5>
-                    <h6>Nosso envio é grátis para todo o Brasil</h6>
-                </div>
-                <div class="col-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
-                        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
-                        <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                    </svg>
-                    <h5>Compra Garantida</h5>
-                    <h6>Ou seu dinheiro de volta em até 7 dias úteis</h6>
-                </div>
-                <div class="col-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
-                        <path d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z"/>
-                    </svg>
-                    <h5>Pagamento seguro</h5>
-                    <h6>Ambiente fortemente seguro para pagamentos</h6>
-                </div>
-                <div class="col-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
-                        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
-                    </svg>
-                    <h5>Atendimento Personalizado</h5>
-                    <h6>De segunda á sexta 8h</br>ás 18h.</h6>
+        <section class="pc">
+            <div class="container">
+                <div class="row complementares">
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                        </svg>
+                        <h5>Frete</h5>
+                        <h6>Nosso envio é grátis para todo o Brasil</h6>
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        <h5>Compra Garantida</h5>
+                        <h6>Ou seu dinheiro de volta em até 7 dias úteis</h6>
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
+                            <path d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z"/>
+                        </svg>
+                        <h5>Pagamento seguro</h5>
+                        <h6>Ambiente fortemente seguro para pagamentos</h6>
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                        </svg>
+                        <h5>Atendimento Personalizado</h5>
+                        <h6>De segunda á sexta 8h</br>ás 18h.</h6>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="mobile">
+            <div class="container">
+                <div class="row complementares">
+                    <div class="carousel-slide" id="carousel-complementares" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item itens-complementares active" data-bs-interval="2000">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                                    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                                </svg>
+                                <h5>Frete Grátis</h5>
+                                <h6>Nosso envio é grátis para todo o Brasil</h6>
+                            </div>
+                            <div class="carousel-item itens-complementares" data-bs-interval="2000">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                    <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                    <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                </svg>
+                                <h5>Compra Garantida</h5>
+                                <h6>Ou seu dinheiro de volta em até 7 dias úteis</h6>
+                            </div>
+                            <div class="carousel-item itens-complementares" data-bs-interval="2000">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
+                                    <path d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z"/>
+                                </svg>
+                                <h5>Pagamento seguro</h5>
+                                <h6>Ambiente fortemente seguro para pagamentos</h6>
+                            </div>
+                            <div class="carousel-item itens-complementares" data-bs-interval="2000">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                                </svg>
+                                <h5>Atendimento Personalizado</h5>
+                                <h6>De segunda á sexta 8h ás 18h.</h6>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-complementares" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel-complementares" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-complementares" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carousel-complementares" data-bs-slide-to="3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <h5>Menu</h5>
-                    <a href="./index.html"><h6>Início</h6></a>
-                    <a href="./sobrenos.html"><h6>Sobre Nós</h6></a>
-                    <a href="./contato.html"><h6>Contato</h6></a>
+    <section class="footerPc">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h5>Menu</h5>
+                        <a href="./index.html"><h6>Início</h6></a>
+                        <a href="./sobrenos.html"><h6>Sobre Nós</h6></a>
+                        <a href="./contato.html"><h6>Contato</h6></a>
+                    </div>
+                    <div class="col-3">
+                        <h5>Políticas</h5>
+                        <a href="./envioPrazos.html"><h6>Envio e Prazos</h6></a>
+                        <a href="./politicasP.html"><h6>Políticas de Privacidade</h6></a>
+                        <a href="./tributacao.html"><h6>Tribuição Alfandegária e Correios</h6></a>
+                        <a href="./trocaDevolucao.html"><h6>Trocas e Devoluções</h6></a>
+                    </div>
+                    <div class="col-3">
+                        <h5>Central de Atendimento</h5>
+                        <h6>Horário de Atendimento:</h6>
+                        <h6>Seg. á Sex. <strong>8:00h</strong> ás <strong>18:00h</strong></h6>
+                        <h6><strong>E-mail:</strong> lojaonnet@gmail.com</h6>
+                        <h6><strong>Celular (Wpp) -</strong>(51) 982550915</h6>
+                    </div>
+                    <div class="col-3" id="compra-segura">
+                        <h5>Compra Segura</h5>
+                        <img src="./midias/Compra Segura.png" alt="">
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h5>Políticas</h5>
-                    <a href="./envioPrazos.html"><h6>Envio e Prazos</h6></a>
-                    <a href="./politicasP.html"><h6>Políticas de Privacidade</h6></a>
-                    <a href="./tributacao.html"><h6>Tribuição Alfandegária e Correios</h6></a>
-                    <a href="./trocaDevolucao.html"><h6>Trocas e Devoluções</h6></a>
+                <div class="row">
+                    <div class="col-6" id="formas-pagamentos">
+                        <h5>Formas de Pagamentos</h5>
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/amex.svg?v=1682526645" alt="American Express">
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/boleto.svg?v=1682526647" alt="Boleto">
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/mastercard.svg?v=1682526649" alt="MasterCard">
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/visa.svg?v=1682526650" alt="Visa">
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/elo.svg?v=1682526648" alt="Elo">
+                        <img src="https://assets.mycartpanda.com/565065/298581/assets/icon-pix.png?v=1682526649" alt="Pix">
+                    </div>
+                    <div class="col" id="redes-sociais">
+                        <h5>Redes Sociais</h5>
+                        <a href="https://www.instagram.com/loja_onnet/" title="Siga-nos no Instagram">
+                            <img src="./midias/icones_redes_sociais/instagram.png" alt="Logo do Instagram" id="efeito"/>
+                        </a>
+                        <a href="https://www.facebook.com/lojaonnet/" title="Siga-nos no Facebook">
+                            <img src="./midias/icones_redes_sociais/facebook.png" alt="Logo do Facebook" id="efeito"/>
+                        </a>
+                        <a href="https://youtube.com/@loja_onnet" title="Visite nosso canal no Youtube">
+                            <img src="./midias/icones_redes_sociais/youtube.png" alt="Logo do Youtube" id="efeito"/> 
+                        </a>
+                        <a href="https://www.tiktok.com/@loja_onnet" title="Siga-nos no Tiktok">
+                            <img src="./midias/icones_redes_sociais/tiktok.png" alt="Logo do Tiktok" id="efeito"/> 
+                        </a>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h5>Central de Atendimento</h5>
-                    <h6>Horário de Atendimento:</h6>
-                    <h6>Seg. á Sex. <strong>8:00h</strong> ás <strong>18:00h</strong></h6>
-                    <h6><strong>E-mail:</strong> lojaonnet@gmail.com</h6>
-                    <h6><strong>Celular (Wpp) -</strong>(51) 982550915</h6>
+                <div class="row" id="copyright">
+                    <div class="col mt-5">
+                        <h6>&copy; 2023, Loja On Net. Todos os direitos reservados.</h6>
+                    </div>
                 </div>
-                <div class="col-3" id="compra-segura">
-                    <h5>Compra Segura</h5>
-                    <img src="../icones/Compra Segura.png" alt="">
+            </div>
+        </footer>
+    </section>
+    <section class="footerMobile">
+        <footer>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#menu">Menu</button>
+                    </div>
+                    <div id="menu" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <a href="./index.html"><h6>Início</h6></a>
+                            <a href="./sobrenos.html"><h6>Sobre Nós</h6></a>
+                            <a href="./contato.html"><h6>Contato</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#politicas">Políticas</button>
+                    </div>
+                    <div id="politicas" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <a href="./envioPrazos.html"><h6>Envio e Prazos</h6></a>
+                            <a href="./politicasP.html"><h6>Políticas de Privacidade</h6></a>
+                            <a href="./tributacao.html"><h6>Tribuição Alfandegária e Correios</h6></a>
+                            <a href="./trocaDevolucao.html"><h6>Trocas e Devoluções</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#centralatendimento">Central de Atendimento</button>
+                    </div>
+                    <div id="centralatendimento" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <h6>Horário de Atendimento:</h6>
+                            <h6>Seg. á Sex. <strong>8:00h</strong> ás <strong>18:00h</strong></h6>
+                            <h6><strong>E-mail:</strong> lojaonnet@gmail.com</h6>
+                            <h6><strong>Celular (Wpp) -</strong>(51) 982550915</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item" id="compra-segura">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#comprasegura">Compra Segura</button>
+                    </div>
+                    <div id="comprasegura" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <img src="./midias/Compra Segura.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6" id="formas-pagamentos">
+                <div class="col-12" id="formas-pagamentos">
                     <h5>Formas de Pagamentos</h5>
                     <img src="https://assets.mycartpanda.com/565065/298581/assets/amex.svg?v=1682526645" alt="American Express">
                     <img src="https://assets.mycartpanda.com/565065/298581/assets/boleto.svg?v=1682526647" alt="Boleto">
@@ -145,7 +288,7 @@
                     <img src="https://assets.mycartpanda.com/565065/298581/assets/elo.svg?v=1682526648" alt="Elo">
                     <img src="https://assets.mycartpanda.com/565065/298581/assets/icon-pix.png?v=1682526649" alt="Pix">
                 </div>
-                <div class="col" id="redes-sociais">
+                <div class="col-12" id="redes-sociais">
                     <h5>Redes Sociais</h5>
                     <a href="https://www.instagram.com/loja_onnet/" title="Siga-nos no Instagram">
                         <img src="./midias/icones_redes_sociais/instagram.png" alt="Logo do Instagram" id="efeito"/>
@@ -162,12 +305,12 @@
                 </div>
             </div>
             <div class="row" id="copyright">
-                <div class="col mt-5">
+                <div class="col-12">
                     <h6>&copy; 2023, Loja On Net. Todos os direitos reservados.</h6>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
     <script src="/lib/bootstrap.bundle.min.js"></script>
     </body>
 </html>

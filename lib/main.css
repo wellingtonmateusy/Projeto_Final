@@ -1,7 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1024px;
+}
+
 header{
     background-color: #192a56;
     padding: 16px;
     color: #fff;
+}
+
+#config_button{
+    background-color: #192a56;
+    border: none;
+}
+
+#procurar .btn-success{
+    background-color: #00C2CB;
+    margin-left: 2px;
+    margin-right: 50px;
 }
 
 #cabecalho img{
@@ -70,8 +91,7 @@ header{
     cursor: pointer;
 }
 
-.row .categorias a:hover,
-.cabecalho_categorias a:hover{
+.row .categorias a:hover{
     color: #00C2CB;
     cursor: pointer;
 }
@@ -88,16 +108,6 @@ header{
 .card-body strong,
 .card-body del{
     color: #575757;
-}
-
-.card-body .btn{
-    background-color: #00C2CB;
-    border: none;
-    width: 100%;
-}
-
-.card-body .btn:hover{
-    background-color: #192a56;
 }
 
 .complementares{
@@ -118,6 +128,10 @@ header{
 
 .banner-body img{
     height: 300px;
+}
+
+.footerMobile{
+    display: none;
 }
 
 footer{
@@ -163,7 +177,67 @@ footer #redes-sociais img{
     width: 30px;
 }
 
+#config_accord .accordion-item{
+    border-left: none;
+    border-right: none;
+}
+
+#instrucoes textarea{
+    resize: none;
+    border-color: #00C2CB;
+    margin-bottom: 10px;
+}
+
+#card-total p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#card-total #finalizar button{
+    width: 100%;
+    height: 50px;
+}
+
+#card-total #pseguro img{
+    width: 15%;
+    display: inline;
+}
+
+#card-carrinho #quantidade{
+    display: block;
+    align-items: center;
+}
+
+#card-carrinho #quantidade #menos, #mais{
+    width: 50px;
+}
+
+#card-carrinho #quantidade #result_quantidade{
+    width: 40px;
+}
+
+#card-carrinho #quantidade #remover{
+    margin-top: 10px;
+}
+
 @media (max-width: 640px){
+
+    .container{
+        max-width: 640px;
+    }
+
+    #config_button{
+        background-color: #192a56;
+        border: none;
+    }
+
+    form{
+        display: flex;
+    }
+
+    #procurar .btn-success{
+        margin-right: 0;
+    }
 
     .pc{
         display: none;
@@ -224,5 +298,36 @@ footer #redes-sociais img{
         height: 10px !important;
         border-radius: 50%;
         background-color: #242424;
+    }
+
+    .footerPc{
+        display: none;
+    }
+
+    .footerMobile{
+        display: block;
+    }
+
+    .footerMobile .accordion-item{
+        background-color: #192a56;
+        color: #fff;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .footerMobile .accordion-item button{
+        background-color: #192a56;
+        color: #fff;
+    }
+
+    .footerMobile #formas-pagamentos, #redes-sociais{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerMobile #copyright{
+        text-align: center;
+        margin-top: 20px;
     }
 }

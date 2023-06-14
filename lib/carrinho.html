@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li class="nav-item fw-bold">
-                            <a href="#" class="nav-link">
+                            <a href="https://rastreamento.correios.com.br/app/index.php" class="nav-link">
                                 Rastrear Pedido
                             </a>
                         </li>
@@ -50,7 +50,7 @@
                     <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
                 </form>
-                <a href="/lib/carrinho.html">
+                <a href="./carrinho.html">
                     <button class="btn btn-success" id="config_button">
                         <i class="bi bi-cart2"></i>
                         <i class="bi bi-0-square-fill" style="color: #00C2CB;"></i>
@@ -60,15 +60,109 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <article class="card mt-5 mb-5">
-                        <div class="card-header">
-                            <h2>Brinquedos</h2>
-                        </div>
+                <h1>Carrinho</h1>
+                <div class="col-md-8">
+                    <article class="card mt-5 mb-4">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col">
-                                    <h2>Nenhum produto encontrado</h2>
+                                <div class="col-md-12" style="text-align: left;">
+                                    <div class="card-header" style="background-color: #fff;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p><strong>Produto</strong>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p><strong>Quantidade</strong>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <p><strong>Total</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <article class="card h-25 mt-2" id="produto-carrinho">
+                                        <div class="card-body">
+                                            <div class="row" id="card-carrinho">
+                                                <div class="col-1">
+                                                    <img class="h-25" src="/lib/categorias/casa e cozinha/midias/produtos/ventilador.png" alt="">
+                                                </div>
+                                                <div class="col-md-5 h-25">
+                                                    <div class="row">
+                                                        <a href="./categorias/casa e cozinha/ventiladorPortatil.html">
+                                                            <label id="nomeProduto">Ventilador Portátil</label>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <span><del>R$ 250,00</del></span>
+                                                        <span><strong class="verde">R$ 180,00</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 h-25" id="quantidade">
+                                                    <div class="row">
+                                                            <button type="button" class="btn bi-dash menos" id="menos"></button>
+                                                            <input id="result_quantidade" name="" min="1" max="99" step="1" size="7" readonly placeholder="1">
+                                                            <button type="button" class="btn bi-plus mais" id="mais"></button>
+                                                    </div>
+                                                    <div class="row" id="remover">
+                                                        <button type="reset" class="btn btn-danger">Remover</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 text-end h-25">
+                                                    <label id="precoTotal">R$ 180,00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card mt-5 mb-4" id="card-total">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5><strong>Total</strong></h5>
+                                </div>
+                                <div class="col-9">
+                                    <label id="preco">R$</label>
+                                </div>
+                            </div>
+                            <div class="row" id="config_accord">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
+                                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#instrucoes">Instruções de envio</button>
+                                        <div id="instrucoes" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <textarea class="form-control"  cols="36" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-dark">Salvar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Todas as entregas possuem código de rastreio <i class="bi bi-geo-alt"></i></i></p>
+                            </div>
+                            <div class="row" id="finalizar">
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success">Finalizar compra</button>
+                                </div>
+                            </div>
+                            <div class="row" id="pseguro">
+                                <p><strong>Pagamento 100% seguro</strong></p>
+                                <div class="col-12">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/amex.svg?v=1682526645" alt="American Express">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/boleto.svg?v=1682526647" alt="Boleto">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/mastercard.svg?v=1682526649" alt="MasterCard">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/visa.svg?v=1682526650" alt="Visa">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/elo.svg?v=1682526648" alt="Elo">
+                                    <img src="https://assets.mycartpanda.com/565065/298581/assets/icon-pix.png?v=1682526649" alt="Pix">
                                 </div>
                             </div>
                         </div>
@@ -228,7 +322,7 @@
                         </div>
                         <div id="menu" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <a href="./index.html"><h6>Início</h6></a>
+                                <a href="/index.html"><h6>Início</h6></a>
                                 <a href="/lib/rodape/sobrenos.html"><h6>Sobre Nós</h6></a>
                                 <a href="/lib/rodape/contato.html"><h6>Contato</h6></a>
                             </div>
@@ -304,6 +398,8 @@
                 </div>
             </footer>
         </section>
-        <script src="/lib/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap.bundle.min.js"></script>
+        <script src="./main.js"></script>
     </body>
 </html>
