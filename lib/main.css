@@ -220,6 +220,16 @@ footer #redes-sociais img{
     margin-top: 10px;
 }
 
+#produto-carrinho a{
+    color: #000000;
+}
+
+#produto-carrinho a:hover,
+#produto-carrinho #nomeProduto label:hover{ 
+    color: #00C2CB;
+    cursor: pointer;
+}
+
 @media (max-width: 640px){
 
     .container{

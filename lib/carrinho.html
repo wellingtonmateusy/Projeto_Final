@@ -60,7 +60,7 @@
         </header>
         <div class="container">
             <div class="row">
-                <h1>Carrinho</h1>
+                <h1 class="mt-2">Carrinho</h1>
                 <div class="col-md-8">
                     <article class="card mt-5 mb-4">
                         <div class="card-body">
@@ -81,14 +81,14 @@
                                     </div>
                                     <article class="card h-25 mt-2" id="produto-carrinho">
                                         <div class="card-body">
-                                            <div class="row" id="card-carrinho">
+                                            <div class="row carrinho" id="card-carrinho">
                                                 <div class="col-1">
                                                     <img class="h-25" src="/lib/categorias/casa e cozinha/midias/produtos/ventilador.png" alt="">
                                                 </div>
                                                 <div class="col-md-5 h-25">
                                                     <div class="row">
-                                                        <a href="./categorias/casa e cozinha/ventiladorPortatil.html">
-                                                            <label id="nomeProduto">Ventilador Portátil</label>
+                                                        <a href="./categorias/casa e cozinha/ventiladorPortatil.html" id="nomeProduto">
+                                                            <label>Ventilador Portátil</label>
                                                         </a>
                                                     </div>
                                                     <div class="row">
@@ -99,15 +99,15 @@
                                                 <div class="col-md-3 h-25" id="quantidade">
                                                     <div class="row">
                                                             <button type="button" class="btn bi-dash menos" id="menos"></button>
-                                                            <input id="result_quantidade" name="" min="1" max="99" step="1" size="7" readonly placeholder="1">
+                                                            <input id="result_quantidade" name="input_quantidade" value="1" min="1" max="99" step="1" size="7" readonly>
                                                             <button type="button" class="btn bi-plus mais" id="mais"></button>
                                                     </div>
                                                     <div class="row" id="remover">
-                                                        <button type="reset" class="btn btn-danger">Remover</button>
+                                                        <button type="reset" class="btn btn-danger remover">Remover</button>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 text-end h-25">
-                                                    <label id="precoTotal">R$ 180,00</label>
+                                                    <label id="preco">R$ 180,00</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,7 +125,7 @@
                                     <h5><strong>Total</strong></h5>
                                 </div>
                                 <div class="col-9">
-                                    <label id="preco">R$</label>
+                                    <label id="precoTotal">R$</label>
                                 </div>
                             </div>
                             <div class="row" id="config_accord">
@@ -151,7 +151,7 @@
                             </div>
                             <div class="row" id="finalizar">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-success">Finalizar compra</button>
+                                    <button type="submit" class="btn btn-success finalizar">Finalizar compra</button>
                                 </div>
                             </div>
                             <div class="row" id="pseguro">
