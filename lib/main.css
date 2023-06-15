@@ -224,6 +224,30 @@ footer #redes-sociais img{
     color: #000000;
 }
 
+.carrinho {
+    height: 200px;
+}
+
+.carrinho #precoTotal1,#precoTotal2,#precoTotal3,#precoTotal4, #precoFinal {
+    width: 80px;
+    border: none;
+} 
+
+.carrinho .comprar_agora1,.comprar_agora2,.comprar_agora3,.comprar_agora4{
+    margin-top: 10px;
+}
+
+.carrinho .remover1,.remover2,.remover3,.remover4{
+    margin-bottom: 5px;
+}
+
+.carrinho .mensagemSuceso1, .mensagemQuantidade1, .mensagemRemove1, .mensagemNRemove1,
+.carrinho .mensagemSuceso2, .mensagemQuantidade2, .mensagemRemove2, .mensagemNRemove2,
+.carrinho .mensagemSuceso3, .mensagemQuantidade3, .mensagemRemove3, .mensagemNRemove3,
+.carrinho .mensagemSuceso4, .mensagemQuantidade4, .mensagemRemove4, .mensagemNRemove4{
+    display: none;
+}
+
 #produto-carrinho a:hover,
 #produto-carrinho #nomeProduto label:hover{ 
     color: #00C2CB;

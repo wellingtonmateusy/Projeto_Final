@@ -75,20 +75,54 @@
                                                 <p><strong>Quantidade</strong>
                                             </div>
                                             <div class="col-md-3 text-center">
-                                                <p><strong>Total</strong>
+                                                <p><strong>Total do Produto</strong>
                                             </div>
                                         </div>
                                     </div>
-                                    <article class="card h-25 mt-2" id="produto-carrinho">
+                                    <article class="card mt-2 produto-carrinho" id="produto-carrinho">
                                         <div class="card-body">
                                             <div class="row carrinho" id="card-carrinho">
                                                 <div class="col-1">
-                                                    <img class="h-25" src="/lib/categorias/casa e cozinha/midias/produtos/ventilador.png" alt="">
+                                                    <img class="h-25" src="./categorias/casa e cozinha/midias/produtos/ventilador.png" alt="">
                                                 </div>
                                                 <div class="col-md-5 h-25">
                                                     <div class="row">
                                                         <a href="./categorias/casa e cozinha/ventiladorPortatil.html" id="nomeProduto">
                                                             <label>Ventilador Portátil</label>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <span><del>R$ 180,00</del></span>
+                                                        <span><strong class="verde">R$ 130,00</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 h-25" id="quantidade">
+                                                    <div class="row">
+                                                        <input type="number" id="VPintup" class="input_quantidade" value="0">
+                                                        <button type="submit" class="btn btn-success comprar_agora1">Comprar</button>
+                                                    </div>
+                                                    <div class="row" id="remover">
+                                                        <button type="reset" class="btn btn-danger remover1">Remover</button>
+                                                        <div class="alert alert-success mensagemSuceso1" id="Msuceso1" role="alert">Adicionado ao Carrinho</div>
+                                                        <div class="alert alert-warning mensagemQuantidade1" id="Mquantidade1" role="alert">Informe a quantidade</div>
+                                                        <div class="alert alert-danger mensagemNRemove1" id="MNremover1" role="alert">O produto nem foi adicionado</div>
+                                                        <div class="alert alert-danger mensagemRemove1" id="Mremover1" role="alert">Removido do Carrinho</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 text-end h-25">
+                                                    <label>R$</label>
+                                                    <input type="number" id="precoTotal1" class="total1" value="0.00" readonly>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row carrinho" id="card-carrinho">
+                                                <div class="col-1">
+                                                    <img class="h-25" src="./categorias/vestuario/midias/produtos/chinelo.png" alt="">
+                                                </div>
+                                                <div class="col-md-5 h-25">
+                                                    <div class="row">
+                                                        <a href="./categorias/vestuario/chineloNuvem.html" id="nomeProduto">
+                                                            <label>Chinelo Nuvem</label>
                                                         </a>
                                                     </div>
                                                     <div class="row">
@@ -98,16 +132,88 @@
                                                 </div>
                                                 <div class="col-md-3 h-25" id="quantidade">
                                                     <div class="row">
-                                                            <button type="button" class="btn bi-dash menos" id="menos"></button>
-                                                            <input id="result_quantidade" name="input_quantidade" value="1" min="1" max="99" step="1" size="7" readonly>
-                                                            <button type="button" class="btn bi-plus mais" id="mais"></button>
+                                                        <input type="number" id="CHinput" class="input_quantidade" value="0">
+                                                        <button type="submit" class="btn btn-success comprar_agora2">Comprar</button>
                                                     </div>
                                                     <div class="row" id="remover">
-                                                        <button type="reset" class="btn btn-danger remover">Remover</button>
+                                                        <button type="reset" class="btn btn-danger remover2">Remover</button>
+                                                        <div class="alert alert-success mensagemSuceso2" id="Msuceso2" role="alert">Adicionado ao Carrinho</div>
+                                                        <div class="alert alert-warning mensagemQuantidade2" id="Mquantidade2" role="alert">Informe a quantidade</div>
+                                                        <div class="alert alert-danger mensagemNRemove2" id="MNremover2" role="alert">O produto nem foi adicionado</div>
+                                                        <div class="alert alert-danger mensagemRemove2" id="Mremover2" role="alert">Removido do Carrinho</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 text-end h-25">
-                                                    <label id="preco">R$ 180,00</label>
+                                                    <label>R$</label>
+                                                    <input type="number" id="precoTotal2" class="total2" value="0.00" readonly>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row  carrinho" id="card-carrinho">
+                                                <div class="col-1">
+                                                    <img class="h-25" src="./categorias/eletronicos/midias/produtos/fone.png" alt="">
+                                                </div>
+                                                <div class="col-md-5 h-25">
+                                                    <div class="row">
+                                                        <a href="./categorias/eletronicos/eletronicos.html" id="nomeProduto">
+                                                            <label>Fone Zohan</label>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <span><del>R$ 580,00</del></span>
+                                                        <span><strong class="verde">R$ 330,00</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 h-25" id="quantidade">
+                                                    <div class="row">
+                                                        <input type="number" id="FZinput" class="input_quantidade" value="0">
+                                                        <button type="submit" class="btn btn-success comprar_agora3">Comprar</button>
+                                                    </div>
+                                                    <div class="row" id="remover">
+                                                        <button type="reset" class="btn btn-danger remover3">Remover</button>
+                                                        <div class="alert alert-success mensagemSuceso3" id="Msuceso3" role="alert">Adicionado ao Carrinho</div>
+                                                        <div class="alert alert-warning mensagemQuantidade3" id="Mquantidade3" role="alert">Informe a quantidade</div>
+                                                        <div class="alert alert-danger mensagemNRemove3" id="MNremover3" role="alert">O produto nem foi adicionado</div>
+                                                        <div class="alert alert-danger mensagemRemove3" id="Mremover3" role="alert">Removido do Carrinho</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 text-end h-25">
+                                                    <label>R$</label>
+                                                    <input type="number" id="precoTotal3" class="total3" value="0.00" readonly>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row carrinho" id="card-carrinho">
+                                                <div class="col-1">
+                                                    <img class="h-25" src="./categorias/saude e beleza/midias/produtos/corretor.png" alt="">
+                                                </div>
+                                                <div class="col-md-5 h-25">
+                                                    <div class="row">
+                                                        <a href="./categorias/saude e beleza/midias/produtos/corretor.png" id="nomeProduto">
+                                                            <label>Corretor Postural</label>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <span><del>R$ 200,00</del></span>
+                                                        <span><strong class="verde">R$ 120,00</strong></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 h-25" id="quantidade">
+                                                    <div class="row">
+                                                        <input type="number" id="CPinput" class="input_quantidade" value="0">
+                                                        <button type="submit" class="btn btn-success comprar_agora4">Comprar</button>
+                                                    </div>
+                                                    <div class="row" id="remover">
+                                                        <button type="reset" class="btn btn-danger remover4">Remover</button>
+                                                        <div class="alert alert-success mensagemSuceso4" id="Msuceso4" role="alert">Adicionado ao Carrinho</div>
+                                                        <div class="alert alert-warning mensagemQuantidade4" id="Mquantidade4" role="alert">Informe a quantidade</div>
+                                                        <div class="alert alert-danger mensagemNRemove4" id="MNremover4" role="alert">O produto nem foi adicionado</div>
+                                                        <div class="alert alert-danger mensagemRemove4" id="Mremover4" role="alert">Removido do Carrinho</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 text-end h-25">
+                                                    <label>R$</label>
+                                                    <input type="number" id="precoTotal4" class="total4" value="0.00" readonly>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,14 +224,15 @@
                     </article>
                 </div>
                 <div class="col-md-4">
-                    <article class="card mt-5 mb-4" id="card-total">
+                    <article class="card mt-5 mb-4" id="card-total" class="card-total">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-3">
                                     <h5><strong>Total</strong></h5>
                                 </div>
                                 <div class="col-9">
-                                    <label id="precoTotal">R$</label>
+                                    <label>R$</label>
+                                    <input type="number" id="precoFinal"  value="0" readonly>
                                 </div>
                             </div>
                             <div class="row" id="config_accord">
@@ -400,6 +507,6 @@
         </section>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./bootstrap.bundle.min.js"></script>
-        <script src="./main.js"></script>
+        <script src="./main2.js"></script>
     </body>
 </html>
