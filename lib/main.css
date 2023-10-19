@@ -254,7 +254,7 @@ footer #redes-sociais img{
     cursor: pointer;
 }
 
-@media (max-width: 640px){
+@media screen and (max-width: 640px){
 
     .container{
         max-width: 640px;
@@ -363,5 +363,100 @@ footer #redes-sociais img{
     .footerMobile #copyright{
         text-align: center;
         margin-top: 20px;
+    }
+
+    #config_accord .accordion-item{
+        border-left: none;
+        border-right: none;
+    }
+    
+    #instrucoes textarea{
+        resize: none;
+        border-color: #00C2CB;
+        margin-bottom: 0px;
+    }
+    
+    #card-total p{
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    #card-total #finalizar button{
+        width: 100%;
+        height: 50px;
+    }
+    
+    #card-total #pseguro img{
+        width: 15%;
+        display: inline;
+    }
+
+    .container .card-header{
+        text-align: center;
+    }
+
+    #card-carrinho {
+        height: 200px;
+        display: inline;
+    }
+
+    #card-carrinho img{
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    #card-carrinho .preco{
+        display: block;
+    }
+    
+    #card-carrinho #quantidade{
+        position: absolute;
+        display: contents;
+    }
+    
+    #card-carrinho #quantidade #menos, #mais{
+        width: 50px;
+    }
+    
+    #card-carrinho #quantidade #result_quantidade{
+        width: 40px;
+    }
+    
+    #card-carrinho #quantidade #remover{
+        margin-top: 10px;
+    }
+    
+    #produto-carrinho a{
+        color: #000000;
+    }
+
+    .carrinho {
+        height: 200px;
+    }
+    
+    .carrinho #precoTotal1,#precoTotal2,#precoTotal3,#precoTotal4, #precoFinal {
+        width: 80px;
+        border: none;
+    } 
+    
+    .carrinho .comprar_agora1,.comprar_agora2,.comprar_agora3,.comprar_agora4{
+        margin-top: 10px;
+    }
+    
+    .carrinho .remover1,.remover2,.remover3,.remover4{
+        margin-bottom: 5px;
+    }
+    
+    .carrinho .mensagemSuceso1, .mensagemQuantidade1, .mensagemRemove1, .mensagemNRemove1,
+    .carrinho .mensagemSuceso2, .mensagemQuantidade2, .mensagemRemove2, .mensagemNRemove2,
+    .carrinho .mensagemSuceso3, .mensagemQuantidade3, .mensagemRemove3, .mensagemNRemove3,
+    .carrinho .mensagemSuceso4, .mensagemQuantidade4, .mensagemRemove4, .mensagemNRemove4{
+        display: none;
+    }
+    
+    #produto-carrinho a:hover,
+    #produto-carrinho #nomeProduto label:hover{ 
+        color: #00C2CB;
+        cursor: pointer;
     }
 }
